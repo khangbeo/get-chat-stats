@@ -1,4 +1,21 @@
-Python program to get the top chatter from streamelements API.
-It puts the output in a text file called "top_chatter.txt"
-Add a list of users to ignore with a text file "excluded_users.txt". Usually your bots or yourself.
-You'll need a .env with USER and TOKEN variables to use the app
+Python program to get the top chatter from streamelements API. Get your own JWT in profile settings.
+
+It puts the output in a text file called "top_chatter.txt". You can run it automatically with cron jobs for Linux/macOS or Task scheduler for Windows.
+
+Add a list of users to ignore with a text file "excluded_users.txt". Usually your bots and yourself.
+Example:
+
+- user_1
+- user_2
+- user_3
+
+You'll need a .env with USER and TOKEN variables to use the app. USER is your username. TOKEN is your JWT
+Format:
+
+- USER=my_username
+- TOKEN=my_jwt
+
+Install dependencies:
+
+- pip install requests
+- pip install python-env
